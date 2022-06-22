@@ -1,12 +1,11 @@
-trigger ContextExampleTrigger on Account (before insert, after insert, after delete) {
-    if (Trigger.isInsert) {
-        if (Trigger.isBefore) {
-            // Process before insert
-        } else if (Trigger.isAfter) {
-            // Process after insert
-        }        
-    }
-    else if (Trigger.isDelete) {
-        // Process after delete
+trigger TriggerOpportunity on Opportunity (before insert, before update){
+    if(Trigger.isBefore) {
+        if(Trigger.isInsert && Trigger.isUpdate){
+            for(Opportunity opp:trigger.new){
+                if(opp.Amount < 5000){
+                    opp.Amount.adderror('Amount cannot be less than 5000.');
+                }
+            }
+        }
     }
 }
