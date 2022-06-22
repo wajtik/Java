@@ -1,3 +1,4 @@
+package AlgoExercises;
 public class StairCase {  
     public static void staircase(int n) {  
       // loop

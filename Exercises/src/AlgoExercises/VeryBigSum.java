@@ -1,3 +1,4 @@
+package AlgoExercises;
 import java.util.List;
 
 class VeryBigSum {
