@@ -2,8 +2,7 @@ package AlgoExercises;
 import java.util.HashSet;
 
 public class TwoStrings {
-    public static String twoStrings(String s1, String s2) {
-        
+    public static String twoStrings(String s1, String s2) {      
         HashSet<Character> string1 = new HashSet<>();
         HashSet<Character> string2 = new HashSet<>();
         
@@ -23,7 +22,13 @@ public class TwoStrings {
             return "YES";
         }   
    }
-        
+
+   public static void main(String[] args) {
+    String s1 = "aand";
+    String s2 = "art";
+
+    System.out.println(twoStrings(s1, s2));   
+    }        
 }
 
 
