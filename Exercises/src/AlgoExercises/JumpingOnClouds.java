@@ -2,7 +2,7 @@ package AlgoExercises;
 
 import java.util.List;
 
-public class Main {
+public class JumpingOnClouds {
 
     public static int jumpingOnClouds(List<Integer> c) {
         int sum = 0;
