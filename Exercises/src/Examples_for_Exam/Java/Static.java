@@ -5,7 +5,7 @@ public class Static {
 
     int count = 0;// will get memory each time when the instance is created
 
-    Static() {
+    public Static() {
         count++;// incrementing value
         System.out.println(count);
     }
@@ -19,6 +19,8 @@ public class Static {
         System.out.println(c1 + " " + c2 + " " + c3);
     }
 }
+
+/************************************************************************************* */
 
 // STATIC VARIABLE
 class Counter2 {

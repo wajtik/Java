@@ -1,4 +1,20 @@
+
+trigger deleteOpp on Opportunity(before delete){
+  if(trigger.isDelete){
+    for(Opportunity o : trigger.New)
+      if(o.Owner == user)
+  }
+}
+
+
+
+
+
+
+
+
 public class DailyLeadProcessor implements Schedulable {
+ 
   public void execute(SchedulableContext ctx) {
     List<Lead> leadList = [
       SELECT Id, LeadSource
